@@ -1,6 +1,6 @@
 import React from "react";
-import { Routes,Route,Navigate } from "react-router-dom";
-
+import { Navigate } from "react-router-dom";
+import {  Routes,Route } from "react-router-dom";
 
 import  Cart  from "../pages/Cart";
 import Checkout from "../pages/Checkout";
@@ -19,7 +19,7 @@ import Users from "../admin/Users";
 
 
 const Routers = () => {
-    return  <Routes>
+    return <Routes>
      <Route path="/" element={<Navigate to="home" />} />  
      <Route path="home" element={<Home/>} /> 
      <Route path="shop" element={<Shop/>} /> 
@@ -35,13 +35,14 @@ const Routers = () => {
       <Route path="dashboard/users" element={<Users/>} />
      
     </Route>
-
+     
 
 
    
      <Route path="login" element={<Login/>} /> 
      <Route path="signup" element={<Signup/>} /> 
     </Routes>
+    
     
 }
 
