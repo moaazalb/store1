@@ -1,6 +1,6 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
-import {  Routes,Route } from "react-router-dom";
+import {   Routes,Route } from "react-router-dom";
 
 import  Cart  from "../pages/Cart";
 import Checkout from "../pages/Checkout";
@@ -19,7 +19,10 @@ import Users from "../admin/Users";
 
 
 const Routers = () => {
-    return <Routes>
+    return (
+     
+   
+    <Routes>
      <Route path="/" element={<Navigate to="home" />} />  
      <Route path="home" element={<Home/>} /> 
      <Route path="shop" element={<Shop/>} /> 
@@ -44,6 +47,7 @@ const Routers = () => {
     </Routes>
     
     
+    )
 }
 
 export default Routers
